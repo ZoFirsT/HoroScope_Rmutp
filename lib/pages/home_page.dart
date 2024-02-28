@@ -2,8 +2,8 @@
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
-import 'package:rmutp_app/pages/HoroscopePage/dialy_holoscope.dart';
-import 'package:rmutp_app/pages/HoroscopePage/lover_holoscope.dart';
+import 'package:rmutp_app/pages/HoroscopePage/DailyHoroscope.dart';
+import 'package:rmutp_app/pages/HoroscopePage/LoverHoroscope.dart';
 
 class HomePage extends StatelessWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -54,13 +54,13 @@ class HomePage extends StatelessWidget {
                   () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => DialyHoloscope()),
+                      MaterialPageRoute(builder: (context) => DailyHoroscope()),
                     );
                   },
                   () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => LoverHoloscope()),
+                      MaterialPageRoute(builder: (context) => LoverHoroscope()),
                     );
                   },
                 ),
